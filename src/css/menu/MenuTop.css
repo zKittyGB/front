@@ -1,0 +1,22 @@
+
+.menu-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    height: 91px;
+    background-color: black;
+    color:white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.menu-top-ul {
+    display: flex;
+    width:70%;
+    margin-right: 87px;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}

@@ -1,0 +1,19 @@
+.custom-tooltip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height:63px;
+    background-color: #E60000;
+    font-size: 7px;
+    color:white;
+}
+
+.barchart-title {
+    position: absolute;
+    margin-top:0px;
+    font-size: 17px;
+    font-weight: 700;
+    color:#20253A;
+}

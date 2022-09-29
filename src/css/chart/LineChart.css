@@ -1,0 +1,28 @@
+.custom-tooltip-linechart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height:25px;
+    background-color: #ffffff;
+    font-size: 8px;
+    font-weight: 700;
+    color:black;
+}
+.linechart-title {
+    position: absolute;
+    margin-top: 20px;    
+    margin-left: 34px;
+    width:150px;
+    font-size: 15px;
+    font-weight: 500;
+    color:#ffffff;
+    opacity: 0.5;
+}
+
+.linechart-chart {
+    position: absolute;
+    z-index: 2;
+    margin-top:60px;
+}

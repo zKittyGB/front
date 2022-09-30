@@ -42,7 +42,7 @@ function ShowBarChart() {
     const CustomTooltip = ({ active, payload}) => {
       if (active && payload && payload.length) {
         return (
-          <div className="custom-tooltip">
+          <div className="body-section-info-chart-group-barchart-customTooltip">
             <p className="label0">{` ${payload[0].value}kg`}</p>
             <p className="label1">{`${payload[1].value}Kcal`}</p>
           </div>
@@ -51,13 +51,13 @@ function ShowBarChart() {
       return null;
     };
 
-    const renderBarChat = (
-      <div className="barchart">
-        <h3 className="barchart-title">Activité quotidienne</h3>
+    const renderBarChart = (
+      <div className="body-section-info-chart-barchart">
+        <h3 className="body-section-info-chart-barchart-title">Activité quotidienne</h3>
         <BarChart width={835} height={320} data={data}>
-            <CartesianGrid strokeDasharray="1 1" />
-            <XAxis dataKey="name" />
-            <YAxis orientation="right"/>
+            <CartesianGrid strokeDasharray="1 1" vertical={false}/>
+            <XAxis dataKey="name" stroke="#9B9EAC" tickLine={false} axisLine={false}/>
+            <YAxis orientation="right" stroke="#9B9EAC" tickCount={3} tickLine={false} axisLine={false}/>
             <Tooltip  content={<CustomTooltip />}  wrapperStyle={{outline:"none" }}/>
             <Legend iconType="circle"  layout="horizontal" verticalAlign="top" align="right" height={80}/>
             <Bar dataKey="pv" fill="#282D30"  barSize={7}  radius={[8,8,0,0]} />
@@ -66,7 +66,7 @@ function ShowBarChart() {
       </div>
     )
     
-    return renderBarChat
+    return renderBarChart
 }
 
 export default ShowBarChart

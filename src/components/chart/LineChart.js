@@ -1,9 +1,6 @@
 import "../../css/chart/LineChart.css"
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
-import { useState } from "react";
+import { LineChart, Line, XAxis, Tooltip} from 'recharts';
 function ShowLineChart() {
-
-    const [perc, setPerc] = useState(0);
 
     const data = [
         {
@@ -37,9 +34,9 @@ function ShowLineChart() {
       ]
 
     const CustomTooltip = ({ active, payload}) => {
-      if (active && payload && payload.length) {
+      if (active && payload) {
         return (
-          <div className="custom-tooltip-linechart">
+          <div className="body-section-info-chart-group-linechart-customTooltip">
             <p className="label">{` ${payload[0].value} min`}</p>
           </div>
         );
@@ -48,9 +45,9 @@ function ShowLineChart() {
     };
 
     const renderLineChart = (
-      <div className="linechart">
-        <h3 className="linechart-title">Durée moyenne des sessions</h3>
-        <div className="linechart-chart">  
+      <div className="body-section-info-chart-group-linechart">
+        <h3 className="body-section-info-chart-group-linechart-title">Durée moyenne des sessions</h3>
+        <div className="body-section-info-chart-group-linechart-chart">  
             <LineChart width={258} height={205} data={data}>
             <defs>
                 <linearGradient id="colorUv" >
@@ -59,7 +56,7 @@ function ShowLineChart() {
                 </linearGradient>
             </defs>
             <Tooltip  content={<CustomTooltip />}  wrapperStyle={{outline:"none" }}/>
-            <XAxis dataKey="name" axisLine={false} stroke="white" opacity={0.5}/>
+            <XAxis dataKey="name" tickLine={false}  axisLine={false} stroke="white" opacity={0.5}/>
             <Line type="monotone" dataKey="min" dot={false}  stroke="url(#colorUv)" strokeWidth={2} />
             </LineChart>
         </div>

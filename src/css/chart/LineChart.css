@@ -1,4 +1,4 @@
-.custom-tooltip-linechart {
+.body-section-info-chart-group-linechart-customTooltip {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
     font-weight: 700;
     color:black;
 }
-.linechart-title {
+.body-section-info-chart-group-linechart-title {
     position: absolute;
     margin-top: 20px;    
     margin-left: 34px;
@@ -21,7 +21,15 @@
     opacity: 0.5;
 }
 
-.linechart-chart {
+.body-section-info-chart-group-linechart {
+    min-width:258px;
+    height:263px;
+    background-color: #FF0000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+}
+
+.body-section-info-chart-group-linechart-chart {
     position: absolute;
     z-index: 2;
     margin-top:60px;

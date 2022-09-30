@@ -1,0 +1,28 @@
+.body-section-info-chart-radialchart {
+    width: 258px;
+    height: 263px;
+}
+
+.body-section-info-chart-Radialchart-title {
+    color:#20253A;
+    font-size: 15px;
+}
+
+.body-section-info-chart-radialchart-score {
+    margin-top:10px;
+    width:110px;
+}
+
+.body-section-info-chart-radialchart-score-percent {
+    font-size: 26px;
+    font-weight: 700;
+    margin:0;
+    text-align: center;
+}
+
+.body-section-info-chart-radialchart-score-text {
+    margin:0;
+    margin-top:5px;
+    color:#74798C;
+    text-align: center;
+}

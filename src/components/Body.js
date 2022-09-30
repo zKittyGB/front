@@ -1,6 +1,8 @@
 import "../css/Body.css"
 import BarChart from "./chart/BarChart"
 import LineChart from "./chart/LineChart"
+import RadarChart from "./chart/RadarChart"
+import RadialChart from "./chart/RadialChart"
 
 function Body(){
     return(
@@ -12,12 +14,17 @@ function Body(){
                 </div>
                 <p className="body-section-welcome-p">Félicitation ! Vous avez explosé vos objectifs hier 👏 </p>
             </div>
-            <div className="body-section-chart">  
-                <div className="body-section-chart-barchart">
+            <div className="body-section-info">
+                <div className="body-section-info-chart">  
                     <BarChart/>
-                </div>   
-                <div className="body-section-chart-linechart">   
-                    <LineChart/>
+                    <div className="body-section-info-chart-group">   
+                        <LineChart/>
+                        <RadarChart/>
+                        <RadialChart/>
+                    </div>
+                </div>
+                <div className="body-section-info-card">
+
                 </div>
             </div>
         </div>

@@ -1,44 +1,7 @@
 import "../../css/chart/BarChart.css"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
-function ShowBarChart() {
-    const data = [
-        {
-          "name": "Page A",
-          "uv": 4000,
-          "pv": 2400
-        },
-        {
-          "name": "Page B",
-          "uv": 3000,
-          "pv": 1398
-        },
-        {
-          "name": "Page C",
-          "uv": 2000,
-          "pv": 9800
-        },
-        {
-          "name": "Page D",
-          "uv": 2780,
-          "pv": 3908
-        },
-        {
-          "name": "Page E",
-          "uv": 1890,
-          "pv": 4800
-        },
-        {
-          "name": "Page F",
-          "uv": 2390,
-          "pv": 3800
-        },
-        {
-          "name": "Page G",
-          "uv": 3490,
-          "pv": 4300
-        }
-      ]
-
+function ShowBarChart(dataBar) {
+    const data = dataBar.dataBar
     const CustomTooltip = ({ active, payload}) => {
       if (active && payload && payload.length) {
         return (
@@ -56,12 +19,12 @@ function ShowBarChart() {
         <h3 className="body-section-info-chart-barchart-title">Activité quotidienne</h3>
         <BarChart width={835} height={320} data={data}>
             <CartesianGrid strokeDasharray="1 1" vertical={false}/>
-            <XAxis dataKey="name" stroke="#9B9EAC" tickLine={false} axisLine={false}/>
+            <XAxis dataKey="day" stroke="#9B9EAC" tickLine={false} axisLine={false}/>
             <YAxis orientation="right" stroke="#9B9EAC" tickCount={3} tickLine={false} axisLine={false}/>
             <Tooltip  content={<CustomTooltip />}  wrapperStyle={{outline:"none" }}/>
             <Legend iconType="circle"  layout="horizontal" verticalAlign="top" align="right" height={80}/>
-            <Bar dataKey="pv" fill="#282D30"  barSize={7}  radius={[8,8,0,0]} />
-            <Bar dataKey="uv" fill="#E60000"  barSize={7} radius={[8,8,0,0]} />
+            <Bar dataKey="Poids (kg)" fill="#282D30"  barSize={7}  radius={[8,8,0,0]} />
+            <Bar dataKey="calories brûlées (kCal)" fill="#E60000"  barSize={7} radius={[8,8,0,0]} />
         </BarChart>
       </div>
     )

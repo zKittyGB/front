@@ -1,0 +1,29 @@
+.body-section-info-cards-card {
+    width:258px;
+    height: 124px;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-section-info-cards-card-text {
+    margin-left:24px;
+}
+
+.body-section-info-cards-card-text-quantity {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.body-section-info-cards-card-text-nutrient {
+    font-size: 14px;
+    color: #74798C;
+    margin-top: 0;
+}
+.body-section-info-cards-card img {
+    width:60px;
+    height: 60px;
+}

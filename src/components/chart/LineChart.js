@@ -1,38 +1,7 @@
 import "../../css/chart/LineChart.css"
 import { LineChart, Line, XAxis, Tooltip} from 'recharts';
-function ShowLineChart() {
-
-    const data = [
-        {
-          "name": "L",
-          "min": 20
-        },
-        {
-          "name": "M",
-          "min": 40
-        },
-        {
-          "name": "M",
-          "min": 51
-        },
-        {
-          "name": "J",
-          "min": 68
-        },
-        {
-          "name": "V",
-          "min": 55
-        },
-        {
-          "name": "S",
-          "min": 59
-        },
-        {
-          "name": "D",
-          "min": 38
-        }
-      ]
-
+function ShowLineChart(dataLine) {
+  const data =dataLine.dataLine
     const CustomTooltip = ({ active, payload}) => {
       if (active && payload) {
         return (
@@ -56,8 +25,8 @@ function ShowLineChart() {
                 </linearGradient>
             </defs>
             <Tooltip  content={<CustomTooltip />}  wrapperStyle={{outline:"none" }}/>
-            <XAxis dataKey="name" tickLine={false}  axisLine={false} stroke="white" opacity={0.5}/>
-            <Line type="monotone" dataKey="min" dot={false}  stroke="url(#colorUv)" strokeWidth={2} />
+            <XAxis dataKey="day" tickLine={false}  axisLine={false} stroke="white" opacity={0.5}/>
+            <Line type="monotone" dataKey="sessionLength" dot={false}  stroke="url(#colorUv)" strokeWidth={2} />
             </LineChart>
         </div>
       </div>

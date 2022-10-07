@@ -4,7 +4,6 @@ import MenuLeft from "../components/menu/MenuLeft"
 import Body from "../components/Body"
 
 function Home(){
-
     return(
         <div className="main">
             <MenuTop/>

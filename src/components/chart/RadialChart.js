@@ -1,7 +1,9 @@
 import "../../css/chart/RadialChart.css"
 import { RadialBarChart, RadialBar, Legend} from 'recharts';
+
 function ShowRadialChart(dataRadial) {
   const data =dataRadial.dataRadial
+  //section to customize the legend
   const renderLegend = () => {
     return (
       <div className="body-section-info-chart-radialchart-score">
@@ -10,6 +12,7 @@ function ShowRadialChart(dataRadial) {
       </div>
     );
   }
+  //section to create RadarChart  
   const renderRadialChart = (
     <div className="body-section-info-chart-radialchart">
     <h3 className="body-section-info-chart-Radialchart-title">Score</h3>

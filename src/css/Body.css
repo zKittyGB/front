@@ -1,6 +1,6 @@
 .body-section {
     background-color: rgb(255, 255, 255);
-    width: 1440px;
+    width: 100%;
     height: 933px;
     display: flex;
     flex-direction: column;
@@ -32,6 +32,7 @@
 .body-section-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .body-section-info-chart-group {
     margin-left:224px;

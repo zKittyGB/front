@@ -1,5 +1,12 @@
 import "../../css/chart/LineChart.css"
 import { LineChart, Line, XAxis, Tooltip} from 'recharts';
+import PropTypes from 'prop-types'
+
+//ShowLineChart PropTypes declaration
+ShowLineChart.propTypes ={ 
+  basicObject: PropTypes.object,
+  dataLine: PropTypes.array
+}
 function ShowLineChart(dataLine) {
   const data =dataLine.dataLine
   //function to customize the tooltip
@@ -13,6 +20,11 @@ function ShowLineChart(dataLine) {
     }    
     return null;
   };
+  //CustomTooltip PropTypes declaration
+  CustomTooltip.propTypes ={ 
+    false: PropTypes.array,
+    true:PropTypes.array
+  }
   //section to create LineChart  
   const renderLineChart = (
     <div className="body-section-info-chart-group-linechart">

@@ -6,7 +6,6 @@ params = params[params.length-2]+params[params.length-1]
 if(params !== "12" && params !== "18"){
   params = 12
 }
-console.log(params)
 //function to format data for each categorie
 async function FormatData() {
   let user = "";
@@ -59,9 +58,39 @@ async function FormatData() {
 
   function getDataLineChart(){
     //Array for LineChart
-    const dataLineChart=[]
-    average.sessions.forEach((newAverage)=>{
-      dataLineChart.push({day:newAverage.day,sessionLength:newAverage.sessionLength})
+    const dataLineChart=[
+      {
+        "day": "L",
+        "sessionLength": "",
+      },
+      {
+        "day": "M",
+        "sessionLength": "",
+      },
+      {
+        "day": "M",
+        "sessionLength": "",
+      },
+      {
+        "day": "J",
+        "sessionLength": "",
+      },
+      {
+        "day": "V",
+        "sessionLength": "",
+      },
+      {
+        "day": "S",
+        "sessionLength": "",
+      },
+      {
+        "day": "D",
+        "sessionLength": "",
+      },
+    ]
+    //Send sessionLength in the array
+    average.sessions.forEach((newAverage,i)=>{
+      dataLineChart[i].sessionLength=newAverage.sessionLength
     })
     return dataLineChart
   }

@@ -1,5 +1,12 @@
 import "../css/Card.css"
+import PropTypes from 'prop-types'
 
+//Card PropTypes declaration
+Card.propTypes ={ 
+  nutrient:PropTypes.string,
+  datanutrient:PropTypes.number,
+  icon:PropTypes.string
+}
 function Card(props){
     return(
         <div className='body-section-info-cards-card'>

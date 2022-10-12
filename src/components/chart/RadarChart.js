@@ -1,6 +1,12 @@
 import "../../css/chart/RadarChart.css"
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar} from 'recharts';
+import PropTypes from 'prop-types'
 
+//ShowRadarChart PropTypes declaration
+ShowRadarChart.propTypes ={ 
+  basicObject: PropTypes.object,
+  dataRadar: PropTypes.array
+}
 function ShowRadarChart(dataRadar) {
   const data = dataRadar.dataRadar
   //section to create RadarChart  

@@ -1,6 +1,12 @@
 import "../../css/chart/RadialChart.css"
 import { RadialBarChart, RadialBar, Legend} from 'recharts';
+import PropTypes from 'prop-types'
 
+//ShowRadialChart PropTypes declaration
+ShowRadialChart.propTypes ={ 
+  basicObject: PropTypes.object,
+  dataRadar: PropTypes.array
+}
 function ShowRadialChart(dataRadial) {
   const data =dataRadial.dataRadial
   //section to customize the legend

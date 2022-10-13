@@ -10,6 +10,7 @@ ShowLineChart.propTypes ={
 /**
   * function that create the lineChart
   * @param {array} data - contains the datas whom be use to create the lineChart
+  * @param {object} dataLine - contains the datas imported from format.js
   * @param {object} renderLineChart - contains the lineChart
 */   
 function ShowLineChart(dataLine) {

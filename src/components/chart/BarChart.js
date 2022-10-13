@@ -10,6 +10,7 @@ ShowBarChart.propTypes ={
 /**
   * function that create the barChart
   * @param {array} data - contains the datas whom be use to create the barChart
+  * @param {object} dataBar - contains the datas imported from format.js
   * @param {object} renderBarChart - contains the barChart
 */   
 function ShowBarChart(dataBar) {

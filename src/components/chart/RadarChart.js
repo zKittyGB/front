@@ -10,6 +10,7 @@ ShowRadarChart.propTypes ={
 /**
   * function that create the radarChart
   * @param {array} data - contains the datas whom be use to create the radarChart
+  * @param {object} dataRadar - contains the datas imported from format.js
   * @param {object} renderRadarChart - contains the radarChart
 */   
 function ShowRadarChart(dataRadar) {

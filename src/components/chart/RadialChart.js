@@ -10,6 +10,7 @@ ShowRadialChart.propTypes ={
 /**
   * function that create the RadialBarChart
   * @param {array} data - contains the datas whom be use to create the RadialBarChart
+  * @param {object} dataRadial - contains the datas imported from format.js
   * @param {object} renderRadialChart - contains the RadialBarChart
 */   
 function ShowRadialChart(dataRadial) {

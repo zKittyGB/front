@@ -12,7 +12,7 @@ Project uses npm as package manager and NodeJs v.6.9.0.
 
 #2 - Install npm
 
-#3 - Clone or Download the backend API
+#3 - Clone or Download the backend API from "https://github.com/zKittyGB/P12-front-end-dashboard"
 
 #4 - Open API folder then install all dependencies required with npm install then launch it with npm start and let him start on "http://localhost:3000"
 

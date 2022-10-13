@@ -7,9 +7,16 @@ ShowLineChart.propTypes ={
   basicObject: PropTypes.object,
   dataLine: PropTypes.array
 }
+/**
+  * function that create the lineChart
+  * @param {array} data - contains the datas whom be use to create the lineChart
+  * @param {object} renderLineChart - contains the lineChart
+*/   
 function ShowLineChart(dataLine) {
   const data =dataLine.dataLine
-  //function to customize the tooltip
+  /**
+    * function that customize the barChart tooltip
+  */ 
   const CustomTooltip = ({ active, payload}) => {
     if(active && payload) {
       return (

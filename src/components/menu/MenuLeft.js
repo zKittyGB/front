@@ -4,8 +4,10 @@ import swimming from "../../assets/swimming.png"
 import cycling from "../../assets/cycling.png"
 import bodybuilding from "../../assets/bodybuilding.png"
 
+/**
+ * function that create the left menu area.
+*/
 function MenuLeft() {
-
     return(
         <div className="menu-left">
             <div className="menu-left-logoArea">

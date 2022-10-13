@@ -7,10 +7,16 @@ ShowBarChart.propTypes ={
   basicObject: PropTypes.object,
   dataBar: PropTypes.array
 }
+/**
+  * function that create the barChart
+  * @param {array} data - contains the datas whom be use to create the barChart
+  * @param {object} renderBarChart - contains the barChart
+*/   
 function ShowBarChart(dataBar) {
-  console.log(dataBar)
   const data = dataBar.dataBar
-  //function to customize the tooltip
+  /**
+    * function that customize the barChart tooltip
+  */   
   const CustomTooltip = ({ active, payload}) => {
     if (active && payload && payload.length) {
       return (

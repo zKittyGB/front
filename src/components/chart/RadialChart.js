@@ -7,9 +7,16 @@ ShowRadialChart.propTypes ={
   basicObject: PropTypes.object,
   dataRadar: PropTypes.array
 }
+/**
+  * function that create the RadialBarChart
+  * @param {array} data - contains the datas whom be use to create the RadialBarChart
+  * @param {object} renderRadialChart - contains the RadialBarChart
+*/   
 function ShowRadialChart(dataRadial) {
   const data =dataRadial.dataRadial
-  //section to customize the legend
+  /**
+    * function that customize the legend of the RadialBarChart
+  */   
   const renderLegend = () => {
     return (
       <div className="body-section-info-chart-radialchart-score">
@@ -18,7 +25,7 @@ function ShowRadialChart(dataRadial) {
       </div>
     );
   }
-  //section to create RadarChart  
+  //section to create RadialBarChart  
   const renderRadialChart = (
     <div className="body-section-info-chart-radialchart">
     <h3 className="body-section-info-chart-Radialchart-title">Score</h3>

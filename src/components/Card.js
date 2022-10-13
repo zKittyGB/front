@@ -7,6 +7,10 @@ Card.propTypes ={
   datanutrient:PropTypes.number,
   icon:PropTypes.string
 }
+ /**
+ * function that create each nutrient card dynamically.
+ * @param {object} props - contain all nutrients datas
+ */
 function Card(props){
     return(
         <div className='body-section-info-cards-card'>

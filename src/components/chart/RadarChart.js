@@ -7,6 +7,11 @@ ShowRadarChart.propTypes ={
   basicObject: PropTypes.object,
   dataRadar: PropTypes.array
 }
+/**
+  * function that create the radarChart
+  * @param {array} data - contains the datas whom be use to create the radarChart
+  * @param {object} renderRadarChart - contains the radarChart
+*/   
 function ShowRadarChart(dataRadar) {
   const data = dataRadar.dataRadar
   //section to create RadarChart  

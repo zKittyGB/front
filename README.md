@@ -1,40 +1,23 @@
-# Getting Started with Create React App
+# Project 12 - "Développez un tableau de bord d'analytics avec React"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application to monitoring your physicals performances with SportSee.
 
-## Available Scripts
+It is a part of OpenClassrooms "Javascript Developer" process.
 
-In the project directory, you can run:
+## 2:Installation
 
-### `npm start`
+Project uses npm as package manager and NodeJs v.6.9.0.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#1 - Install NodeJs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#2 - Install npm
 
-### `npm test`
+#3 - Clone or Download the backend API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#4 - Open API folder then install all dependencies required with npm install then launch it with npm start and let him start on "http://localhost:3000"
 
-### `npm run build`
+#5 - Clone or Download the project APP
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#6 - Open App folder then install all dependencies required with npm install then launch it with npm strat and accept to start him on "http://localhost:3001"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#7 - By default, the app will start on user "12". Change the url by "localhost:3001/12" or "localhost:3001/18" to switch between the two users registered

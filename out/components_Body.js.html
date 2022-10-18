@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/Body.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/Body.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import "../css/Body.css"
+import BarChart from "./chart/BarChart"
+import LineChart from "./chart/LineChart"
+import RadarChart from "./chart/RadarChart"
+import RadialChart from "./chart/RadialChart"
+import Card from "./Card"
+import Calories from "../assets/calories-icon.png"
+import Proteins from "../assets/proteins-icon.png"
+import Carbohydrates from "../assets/carbohydrates-icon.png"
+import Lipidiques from "../assets/lipidiques-icon.png"
+import { useEffect, useState } from 'react';
+import Format from "../services/format"
+/**
+ * function that create the body of the apllication.
+*/
+ function Body(){
+    const [format, setFormat] = useState();
+    /**
+     * function that get data from format.js.
+    */
+    async function getFormat(){
+        const apiDataFormat = await Format()
+        setFormat(apiDataFormat)
+    }
+    useEffect(() => {getFormat();}, []);
+    //verification about user data existing
+    if(format !== undefined){
+        //storage of datas
+        const formatDataRadial = format[0]
+        const datanutrient = format[1].keyData
+        const formatDataBar = format[2]
+        const formatDataLine = format[3]
+        const formatDataRadar = format[4]
+        return(
+            &lt;div className="body-section">
+                &lt;div className="body-section-welcome">
+                    &lt;div className="body-section-welcome-h1">
+                        &lt;h1 className="body-section-welcome-h1-welcome">Bonjour&lt;/h1>
+                        &lt;h1 className="body-section-welcome-h1-name"> {`${format[1].userInfos.firstName}`}&lt;/h1>
+                    &lt;/div>
+                    &lt;p className="body-section-welcome-p">Félicitation ! Vous avez explosé vos objectifs hier 👏 &lt;/p>
+                &lt;/div>
+                &lt;div className="body-section-info">
+                    {/* section of all recharts*/}
+                    &lt;div className="body-section-info-chart">  
+                        &lt;BarChart dataBar={formatDataBar}/>
+                        &lt;div className="body-section-info-chart-group">   
+                            &lt;LineChart dataLine={formatDataLine}/>
+                            &lt;RadarChart dataRadar={formatDataRadar}/>
+                            &lt;RadialChart dataRadial={formatDataRadial}/>
+                        &lt;/div>
+                    &lt;/div>
+                    {/* section cards for each nutrient */}
+                    &lt;div className="body-section-info-cards">
+                        &lt;Card key={'Calories'} nutrient={'Calories'} datanutrient={datanutrient.calorieCount} icon={Calories} />                                                                 
+                        &lt;Card key={'Proteins'} nutrient={'Proteines'} datanutrient={datanutrient.proteinCount} icon={Proteins} />                                                                 
+                        &lt;Card key={'Carbohydrates'} nutrient={'Glucides'} datanutrient={datanutrient.carbohydrateCount} icon={Carbohydrates}  />                                                                                                                                  
+                        &lt;Card key={'Lipidiques'} nutrient={'Lipides'} datanutrient={datanutrient.lipidCount} icon={Lipidiques} />                                                                 
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        )
+    }
+}
+
+export default Body</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#apiData">apiData</a></li><li><a href="global.html#Body">Body</a></li><li><a href="global.html#Card">Card</a></li><li><a href="global.html#FormatData">FormatData</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Logo">Logo</a></li><li><a href="global.html#MenuLeft">MenuLeft</a></li><li><a href="global.html#MenuTop">MenuTop</a></li><li><a href="global.html#ShowBarChart">ShowBarChart</a></li><li><a href="global.html#ShowLineChart">ShowLineChart</a></li><li><a href="global.html#ShowRadarChart">ShowRadarChart</a></li><li><a href="global.html#ShowRadialChart">ShowRadialChart</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Tue Oct 18 2022 10:02:00 GMT+0200 (heure d’été d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

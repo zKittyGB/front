@@ -1,0 +1,102 @@
+{
+    "obj":[
+        {
+            "name":"objectif",
+            "value":"70",
+            "fill":"#FF0000"
+        }
+    ],
+    "nutrient":{
+        "id":"18",
+        "keyData":{
+            "calorieCount":2000,
+            "proteinCount":50,
+            "carbohydrateCount":100,
+            "lipidCount":190
+        },
+        "score":"0.3",
+        "userInfos":{
+            "firstName":"Béatrice",
+            "lastName":"Pullet",
+            "age":"30"
+        }
+    },
+    "activity":[
+        {
+            "day":"1",
+            "Poids (kg)":65,
+            "calories brûlées (kCal)":200
+        },
+        {
+            "day":"2",
+            "Poids (kg)":64,
+            "calories brûlées (kCal)":200
+        },
+        {
+            "day":"3",
+            "Poids (kg)":64,
+            "calories brûlées (kCal)":200
+        },
+        {
+            "day":"4",
+            "Poids (kg)":63,
+            "calories brûlées (kCal)":200
+        }
+    ],
+    "sessions":[
+        {
+            "day":"L",
+            "sessionLength":10
+        },
+        {
+            "day":"M",
+            "sessionLength":20
+        },
+        {
+            "day":"M",
+            "sessionLength":30
+        },
+        {
+            "day":"J",
+            "sessionLength":40
+        },
+        {
+            "day":"V",
+            "sessionLength":50
+        },
+        {
+            "day":"S",
+            "sessionLength":60
+        },
+        {
+            "day":"D",
+            "sessionLength":70
+        }
+    ],
+    "perf":[
+        {
+            "kind":"cardio",
+            "A":140,
+            "fullMark":140
+        },
+        {
+            "kind":"energy",
+            "A":120,
+            "fullMark":140
+        },
+        {
+            "kind":"endurance",
+            "A":100,
+            "fullMark":140
+        },
+        {
+            "kind":"strength",
+            "A":80,
+            "fullMark":140
+        },{
+            "kind":"intensity",
+            "A":220,
+            "fullMark":140
+        }
+    ]
+}

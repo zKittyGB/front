@@ -16,7 +16,7 @@ function Card(props){
         <div className='body-section-info-cards-card'>
             <img src={props.icon} alt={props.nutrient}/>
             <div className="body-section-info-cards-card-text">
-                <p className="body-section-info-cards-card-text-quantity">{props.datanutrient}</p>
+                <p className="body-section-info-cards-card-text-quantity">{props.datanutrient+props.unit}</p>
                 <p className="body-section-info-cards-card-text-nutrient">{props.nutrient}</p>
             </div>
         </div>

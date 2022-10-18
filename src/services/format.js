@@ -23,7 +23,7 @@ class FormatDatas {
     //Array for BarChart
     const dataBarChart=[]
     this.activity.sessions.forEach((newActivity)=>{
-      dataBarChart.push({day:newActivity.day.substr(8),"Poids (kg)":newActivity.kilogram, "calories brûlées (kCal)":newActivity.calories})
+      dataBarChart.push({day:newActivity.day.substr(9),"Poids (kg)":newActivity.kilogram, "calories brûlées (kCal)":newActivity.calories})
     })
     return dataBarChart
   }
@@ -110,17 +110,13 @@ params = params[params.length-2]+params[params.length-1]
 if(params !== "12" && params !== "18"){
   params = 12
 }
-/**
- * function that format all user's data.
-*/
+/** function that format all user's data.*/
 async function FormatData() {
   let user = "";
   let activity = "";
   let average ="";
   let perf ="";
-/**
- * function that call Axios request and return them
-*/
+/** function that call Axios request and return them */
   async function getApiData(){
     try{
       const dataUser = await ApiData.get(`/user/${params}`);

@@ -1,8 +1,6 @@
 import "../../css/menu/MenuTop.css"
 import Logo from "../Logo"
-/**
- * function that create the top menu area.
-*/
+/** function that create the top menu area. */
 function MenuTop() {
     return(
         <div className="menu-top">

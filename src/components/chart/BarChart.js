@@ -1,5 +1,6 @@
 import "../../css/chart/BarChart.css"
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
+import React from 'react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts';
 import PropTypes from 'prop-types'
 
 //ShowBarChart PropTypes declaration
@@ -10,11 +11,9 @@ ShowBarChart.propTypes ={
   * function that create the barChart
   * @param {object} dataBar - contains the datas imported from format.js
 */   
-function ShowBarChart(dataBar) {
+function ShowBarChart(dataBar)  {
   const data = dataBar.dataBar
-  /**
-    * function that customize the barChart tooltip
-  */   
+  /** function that customize the barChart tooltip*/   
   const CustomTooltip = ({ active, payload}) => {
     if (active && payload && payload.length) {
       return (
@@ -45,4 +44,4 @@ function ShowBarChart(dataBar) {
   return renderBarChart
 }
 
-export default ShowBarChart
+export default ShowBarChart 

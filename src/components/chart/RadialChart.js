@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 //ShowRadialChart PropTypes declaration
 ShowRadialChart.propTypes ={ 
-  dataRadial: PropTypes.array
+ dataRadial: PropTypes.array
 }
 /**
   * function that create the RadialBarChart

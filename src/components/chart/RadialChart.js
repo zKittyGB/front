@@ -4,14 +4,11 @@ import PropTypes from 'prop-types'
 
 //ShowRadialChart PropTypes declaration
 ShowRadialChart.propTypes ={ 
-  basicObject: PropTypes.object,
-  dataRadar: PropTypes.array
+  dataRadial: PropTypes.array
 }
 /**
   * function that create the RadialBarChart
-  * @param {array} data - contains the datas whom be use to create the RadialBarChart
   * @param {object} dataRadial - contains the datas imported from format.js
-  * @param {object} renderRadialChart - contains the RadialBarChart
 */   
 function ShowRadialChart(dataRadial) {
   const data =dataRadial.dataRadial

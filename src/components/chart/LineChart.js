@@ -4,14 +4,11 @@ import PropTypes from 'prop-types'
 
 //ShowLineChart PropTypes declaration
 ShowLineChart.propTypes ={ 
-  basicObject: PropTypes.object,
   dataLine: PropTypes.array
 }
 /**
   * function that create the lineChart
-  * @param {array} data - contains the datas whom be use to create the lineChart
   * @param {object} dataLine - contains the datas imported from format.js
-  * @param {object} renderLineChart - contains the lineChart
 */   
 function ShowLineChart(dataLine) {
   const data =dataLine.dataLine
@@ -28,11 +25,6 @@ function ShowLineChart(dataLine) {
     }    
     return null;
   };
-  //CustomTooltip PropTypes declaration
-  CustomTooltip.propTypes ={ 
-    false: PropTypes.array,
-    true:PropTypes.array
-  }
   //section to create LineChart  
   const renderLineChart = (
     <div className="body-section-info-chart-group-linechart">

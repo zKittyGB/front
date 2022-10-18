@@ -12,19 +12,12 @@ import { useEffect, useState } from 'react';
 import Format from "../services/format"
 /**
  * function that create the body of the apllication.
- * @param {object} format - all user's datas formated from format.js
- * @param {array} formatDataRadial - datas about the day objective to put in the radialChart
- * @param {object} datanutrient - all user's nutrients datas to put in the cards
- * @param {array} formatDataBar - datas about the user's weight and the calories spent per day to put in the barChart
- * @param {array} formatDataLine - datas about the user's session length per day in a week to put in the lineChart
- * @param {array} formatDataRadar - datas about the user's force and weakness to put in the radarChart
- */
+*/
  function Body(){
     const [format, setFormat] = useState();
     /**
      * function that get data from format.js.
-     * @param {object} apiDataFormat - use to call user's datas formated from format.js
-     */
+    */
     async function getFormat(){
         const apiDataFormat = await Format()
         setFormat(apiDataFormat)

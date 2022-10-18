@@ -4,14 +4,11 @@ import PropTypes from 'prop-types'
 
 //ShowBarChart PropTypes declaration
 ShowBarChart.propTypes ={ 
-  basicObject: PropTypes.object,
   dataBar: PropTypes.array
 }
 /**
   * function that create the barChart
-  * @param {array} data - contains the datas whom be use to create the barChart
   * @param {object} dataBar - contains the datas imported from format.js
-  * @param {object} renderBarChart - contains the barChart
 */   
 function ShowBarChart(dataBar) {
   const data = dataBar.dataBar
@@ -29,11 +26,6 @@ function ShowBarChart(dataBar) {
     }    
     return null;
   };
-  //CustomTooltip PropTypes declaration
-  CustomTooltip.propTypes ={ 
-    false: PropTypes.array,
-    true:PropTypes.array
-  }
   //section to create BarChart
   const renderBarChart = (
     <div className="body-section-info-chart-barchart">

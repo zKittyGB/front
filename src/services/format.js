@@ -8,10 +8,6 @@ if(params !== "12" && params !== "18"){
 }
 /**
  * function that format all user's data.
- * @param {string} user - var empty whom will use to stock user's informations datas usefull to the chart
- * @param {string} activity - var empty whom will use to stock user's activities datas usefull to the chart
- * @param {string} average - var empty whom will use to stock user's average datas usefull to the chart
- * @param {string} perf - var empty whom will use to stock user's performances datas usefull to the chart
 */
 async function FormatData() {
   let user = "";
@@ -20,14 +16,6 @@ async function FormatData() {
   let perf ="";
 /**
  * function that call Axios request and return them
- * @param {object} dataUser - stock user's informations datas
- * @param {object} dataActivity - stock user's activities datas
- * @param {object} dataAverage - stock user's average datas
- * @param {object} dataPerf - stock user's performances datas
- * @param {array} dataRadial -  stock user's formated datas
- * @param {array} dataBarChart - stock user's formated activities datas
- * @param {array} dataLineChart - stock user's formated average datas
- * @param {array} dataRadar - stock user's formated perfomances datas
 */
   async function getApiData(){
     try{
@@ -52,7 +40,6 @@ async function FormatData() {
   const apiData = await getApiData()
   /**
     * function that format user's datas for the radialChart
-    * @param {array} dataRadial - stock formated user's informations datas
   */
   function getDataRadial(){
     const dataRadial = [
@@ -66,7 +53,6 @@ async function FormatData() {
   }
   /**
     * function that format activities datas for the barChart
-    * @param {array} dataBarChart - stock formated activities datas
   */   
   function getDataBarChart(){
     //Array for BarChart
@@ -78,7 +64,6 @@ async function FormatData() {
   }
   /**
     * function that format average datas for the lineChart
-    * @param {array} dataLineChart - stock formated average datas
   */   
   function getDataLineChart(){
     //Array for LineChart
@@ -120,7 +105,6 @@ async function FormatData() {
   }
   /**
     * function that format performances datas for the lineChart
-    * @param {array} dataRadarChart - stock formated performances datas
   */   
   function getDataRadarChart(){
     //Array for RadarChart

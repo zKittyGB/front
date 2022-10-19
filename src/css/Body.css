@@ -53,3 +53,20 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1024px) { 
+    .body-section-welcome-h1 {
+        margin-left:150px;
+    }
+
+    .body-section-welcome-p {
+        margin-left:150px;
+    }
+    .body-section-info-chart {
+        width:74%;
+    }
+
+    .body-section-info-chart-group {
+        margin-left:150px;
+        width:80%;
+    }
+}

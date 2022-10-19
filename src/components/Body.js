@@ -9,6 +9,7 @@ import Proteins from "../assets/proteins-icon.png"
 import Carbohydrates from "../assets/carbohydrates-icon.png"
 import Lipidiques from "../assets/lipidiques-icon.png"
 import { useEffect, useState } from 'react';
+import React from "react"
 import Format from "../services/format"
 import Mock from "./chart/data/mock.json"
 /**function that create the body of the apllication.*/

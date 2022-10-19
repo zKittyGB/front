@@ -5,3 +5,18 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
     border-radius: 5px;
 }
+
+@media (max-width: 1024px) { 
+    .body-section-info-chart-group-radarchart {
+            width:30%;
+    }
+
+    .body-section-info-chart-group-radarchart-chart {
+            width:180px;
+    }
+
+    .body-section-info-chart-group-radarchart .recharts-surface{
+            width:180px;
+    }
+    
+}

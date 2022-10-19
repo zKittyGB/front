@@ -26,10 +26,12 @@ function ShowBarChart(dataBar)  {
     return null;
   };
   //section to create BarChart
-  const renderBarChart = (
+  
+  return (      
     <div className="body-section-info-chart-barchart">
       <h3 className="body-section-info-chart-barchart-title">Activité quotidienne</h3>
-      <BarChart width={835} height={320} data={data} barCategoryGap={54} barGap={8}>
+      <ResponsiveContainer width="100%" height={300}>
+      <BarChart data={data}barCategoryGap={54} barGap={8}>
         <CartesianGrid strokeDasharray="1 1" vertical={false}/>
         <XAxis dataKey="day" stroke="#9B9EAC" tickLine={false} axisLine={false}/>
         <YAxis yAxisId={1} orientation="right" dataKey="Poids (kg)" type="number" domain={['dataMin - 1', 'dataMax + 1']} stroke="#9B9EAC" tickCount={4} tickLine={false} axisLine={false}/>
@@ -39,9 +41,9 @@ function ShowBarChart(dataBar)  {
         <Bar yAxisId={1} dataKey="Poids (kg)"  fill="#282D30"  barSize={7}  radius={[8,8,0,0]} />
         <Bar yAxisId={2} dataKey="calories brûlées (kCal)" fill="#E60000"  barSize={7} radius={[8,8,0,0]} />
       </BarChart>
+      </ResponsiveContainer>
     </div>
-  )
-  return renderBarChart
+  );
 }
 
 export default ShowBarChart 

@@ -28,3 +28,10 @@
     font-weight: 700;
     color:#20253A;
 }
+
+@media (max-width: 1024px) {
+    .body-section-info-chart-barchart {
+        margin-left:150px;
+        width:80%;
+    }
+}

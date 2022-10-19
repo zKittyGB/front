@@ -29,7 +29,6 @@
     text-align: center;
 }
 
-
 @media (max-width: 1024px) { 
     .body-section-info-chart-radialchart {
         width:30%;
@@ -41,6 +40,4 @@
     .body-section-info-chart-radialchart-score {
         margin-left:-38px;
     }
-
-
 }
